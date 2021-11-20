@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+:root{
+    --margin: 1.5rem
+}
+body{
+    background: linear-gradient(45deg, #108cf1,#286965)  
+}
+.main-container{
+    background: #14253d;
+    margin: auto;
+    border-radius: 15px;
+    width: 23.5rem;
+    box-shadow: 11px -10px 11px 5px rgba(20,37,61,0.75);
+    
+}
+.nested-container{
+    margin: 2.3rem;
+}
+.NFT-image{
+    height: 19rem;
+    width: 19rem;
+    margin-top: var(--margin);
+    border-radius: 7px;
+}
+.NFT-header > p{
+    color: white;
+    margin: 1.8rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    ;
+}
+.NFT-quotes__last{
+    color: #c7c4c4;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin-bottom: var(--margin);
+    
+}
+.NFT-worth > h2{
+    color: #2ee2d0;
+}
+.NFT-deadline > p ,
+ .NFT-creator__bio {
+    color: rgb(123, 128, 127);
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+.NFT-status{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.image-header{
+    height: 50px;
+    width: 50px;
+    border: 2px white solid;
+    border-radius: 50%;
+    margin-right: var(--margin);
+    transform: translateY(-0.8rem);
+}
+.NFT-creator__name{
+    color: #c7c4c4;
+    font-weight: bold;
+}
+.NFT-creator__bio{
+    font-size: 20px;
+}
+.NFT-creator{
+    display: flex;
+    flex-direction: row;
+    margin-top: var(--margin);
+}
+.clock{
+    transform: translateY(0.1rem);
+}
+.attribution{
+    font-size: 0.6rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+.attribution > a{
+    text-decoration: none;
+    color: rgb(250, 247, 244);
+    background: yellowgreen;
+    border-radius: 5px;
+    padding: 3px 2px;
+    border: none;
+}
+ .svg{
+     display: none;
+ }
+@media (min-width:40rem) {
+    .NFT-image{
+        color: turquoise;
+    }
+    .NFT-image:hover{
+      cursor: pointer;
+      filter: grayscale(26%) sepia(88%) blur(1px) brightness(81%) hue-rotate(162deg) saturate(579%) opacity(76%) contrast(69%) invert(8%) ;
+    }
+    .NFT-header > p{
+        color: #2ee2d0;
+    }
+    .NFT-creator__name{
+        color: #2ee2d0;
+    }
+    .svg{
+        transform: translateY(-12rem) translateX(7.4rem);
+        display: block !important;
+        
+    }
+}
